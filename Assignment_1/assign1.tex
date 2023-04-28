@@ -95,69 +95,74 @@ columns=fullflexible
  Which of the following cannot be the probability of an event ?
 \vspace{7pt}
 
-
 \begin{enumerate*}
    
-\item \hspace{4pt}\(\displaystyle\frac{2}{3}\) \hspace{5pt} \item \hspace{4pt}\(-1.5\) \hspace{5pt} \item \hspace{4pt}\(15\%\) \hspace{5pt}  \item \hspace{4pt} \(0.7\) \hspace{5pt}     
+\item \hspace{4pt}\(\displaystyle\frac{2}{3}\) \hspace{5pt} 
+\item \hspace{4pt}\(-1.5\) \hspace{5pt} 
+\item \hspace{4pt}\(15\%\) \hspace{5pt}  
+\item \hspace{4pt} \(0.7\) \hspace{5pt}     
 \end{enumerate*}
 
-\bigskip
-
+\vspace{10pt}
 %Answer
-\noindent \textbf{Answer}:
+\textbf{Answer}:
 
-Probability of an event \(E\) , written as \(P(E)\):
+Probability of an event $E$ , written as \pr{E}\:
 
-\medskip
-\(P(E)=\displaystyle\frac{\text{Number of outcomes favourable to \(E\)}}{\text{Total Number of possible outcomes in sample space }}\)
+\begin{align}
+\label{eq:def}
+\pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to \(E\)}}{\text{Total Number of possible outcomes in sample space}}
+\end{align}
 
-\bigskip
-From the definition of probability \(P(E)\) , number of favourable outcomes is always less than or equal to the number of all possible outcomes.
+
+From the definition of probability \pr{E}, number of favourable outcomes is always less than or equal to the number of all possible outcomes.
 
 
-\begin{equation}
+\begin{align}
    \label{eq:prob}
-   0 \le P(E)\le 1 
-\end{equation}
+   0 \le \pr{E}\le 1 
+\end{align}
 \begin{enumerate}
     
 
-\item \(\displaystyle\frac{2}{3}\)
+\item \pr{E} = \(\displaystyle\frac{2}{3}\)
+\begin{align}
+    \because 0 \le \displaystyle\frac{2}{3} \le 1
+\end{align}
 
-\medskip
-\indent Since \(0 \le \displaystyle\frac{2}{3} \le 1\) , From \eqref{eq:prob}
+From \eqref{eq:prob} ,
 
-\medskip
+ It can be probability of an event.
+
+\item \pr{E} = \(-1.5\)
+\begin{align}
+\because  -1.5 < 0 
+\end{align}
+
+From \eqref{eq:prob} ,
+
+It cannot be a probability of any event.
+
+\item \pr{E} = \(15\%\)
+
+\begin{align}
+15\%=\displaystyle\frac{15}{100}
+\end{align}
+
+\begin{align}
+\because 0 \le \displaystyle\frac{15}{100} \le 1
+\end{align}
+
+From \eqref{eq:prob} ,
+
 \indent It can be probability of an event.
 
-\bigskip
-\item \(-1.5\)
+\item \pr{E} = \(0.7\) 
+\begin{align}
+\because 0 \le 0.7 \le 1 
+\end{align}
 
-\bigskip
-\indent Since  \( -1.5 < 0 \) , From \eqref{eq:prob}
-
-\medskip
-\indent It cannot be a probability of any event.
-
-\bigskip
-\item \(15\%\)
-
-\bigskip
-\indent \(15\%=\displaystyle\frac{15}{100}\)
-
-\bigskip
-\indent Since \(0 \le \displaystyle\frac{15}{100} \le 1\) , From \eqref{eq:prob}
-
-\medskip
-\indent It can be probability of an event.
-
-\bigskip
-\bigskip
-
-\item \(0.7\) \bigskip
-
-Since \(0 \le 0.7 \le 1\), From \eqref{eq:prob} 
-\medskip
+From \eqref{eq:prob} ,
 
 It can be a probability of an event.
 \end{enumerate}
