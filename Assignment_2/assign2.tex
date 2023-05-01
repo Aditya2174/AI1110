@@ -21,6 +21,22 @@
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 
+
+\def\inputGnumericTable{}
+
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\usepackage{caption} 
+\captionsetup[table]{skip=3pt}  
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+
 \renewcommand\thesectiondis{\arabic{section}}
 \renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
 \renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
@@ -89,7 +105,7 @@ columns=fullflexible
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-
+\renewcommand{\thetable}{\arabic{table}}  
 \textbf{11.16.1.12}:
 One urn contains two black balls (labelled B1 and B2) and one white ball. A
 second urn contains one black ball and two white balls (labelled W1 and W2).
@@ -111,14 +127,46 @@ chosen at random from the same urn without replacing the first ball.
 
 Probability of an event $E$, written as $\pr{E}$
 \begin{align}
-\pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to $E$}}{\text{Total Number of possible outcomes in sample space }}
+\pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to $E$}}{\text{Total Number of possible outcomes }}
 \end{align}
-Let the white ball in first urn be 'W' and the black ball in second urn be 'B'.
+Let $Z$ be a Bernoulli random variable
+ \begin{equation}
+    Z=
+    \begin{cases}
+      0, & \text{if Urn 1 chosen }\\
+      1, & \text{if Urn 2 chosen}
+    \end{cases}
+  \end{equation}
+  Since both events are equally likely
+  \begin{align}
+  \pr{Z=0} &= \pr{Z=1}\\
+         &=\frac{1}{2}
+  \end{align}
+Let $X_1$ be a random variable denoting first ball chosen from Urn 1 \\
+ $X_2$ be random variable denoting second ball chosen from Urn 1
 
+\begin{table}[ht!]
+		\centering
+		\input{Tables/table1.tex}
+		\caption{}
+		\label{table:table1}	
+	\end{table}
+Let $Y_1$ be a random variable denoting first ball chosen from Urn 2 \\
+$Y_2$ be random variable denoting second ball chosen from Urn 2
+
+\begin{table}[ht!]
+		\centering
+		\input{Tables/table2.tex}
+		\caption{}
+		\label{table:table2}	
+	\end{table}
+
+ 
 \begin{enumerate}[label =(\alph*)]
 \item Sample Space S:
 \begin{align}
-\cbrak{B_1B_2,B_2B_1,B_1W,WB_1,B_2W,WB_2,W_1W_2,W_2W_1,W_1B,BW_1,W_2B,BW_2}
+\lcbrak{001,010,002,020,021,012,101,}\\
+ \rcbrak{110,102,120,121,112} \nonumber
 \end{align} 
 \begin{align}
     \therefore n(S) = 12
@@ -126,7 +174,7 @@ Let the white ball in first urn be 'W' and the black ball in second urn be 'B'.
 
 \item Let $E$ be event that 2 black balls are chosen,
 The favourable outcomes are 
-\cbrak{B_1B_2,B_2B_1}
+\cbrak{001,010}
 \begin{align}
    \pr{E}&=\frac{2}{12}\\ 
         &=\frac{1}{6} \\
@@ -136,7 +184,7 @@ The favourable outcomes are
 \item Let $E$ be event that balls of opposite colours are chosen,
 The favourable outcomes are 
 
-\cbrak{B_1W,WB_1,B_2W,WB_2,W1_B,BW_1,W_2B,BW_2}
+\cbrak{002,020,012,021,102,120,112,121}
 \begin{align}
     \pr{E}&=\frac{8}{12}\\
         &=\frac{2}{3} \\
@@ -145,3 +193,4 @@ The favourable outcomes are
 \end{enumerate}
 
 \end{document}
+
