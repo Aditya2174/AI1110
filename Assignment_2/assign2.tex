@@ -144,6 +144,13 @@ Let $Z$ be a Bernoulli random variable
   \end{align}
 Let $X$ be a random variable denoting first ball is chosen and
  $Y$ be random variable denoting second ball is chosen .
+ \begin{enumerate}
+     \item $(X+Y =1,Z=0) $ represents 2 black balls are chosen.
+     \item $(X+Y =1,Z=1) $ represents 2 white balls are chosen.
+     \item $ (X+Y) > 1 $ represents 2 balls of opposite colors are chosen.
+ \end{enumerate}
+ 
+ 
 
 \begin{table}[ht!]
 		\centering
@@ -169,24 +176,34 @@ Let $X$ be a random variable denoting first ball is chosen and
 \begin{align}
     \therefore n(S) = 12
 \end{align}
-\item Let $E$ be event that 2 black balls are chosen.
+\item Let $E$ be event that 2 black balls are chosen.\\
 Required Probability:
-\begin{align}
+\begin{align}  \label{eq:1}
+&\pr{X+Y=1,Z=0} =\\ \nonumber
 &\pr{ (X =0,Y=1) | Z=0}\pr{Z=0} +\\ \nonumber
 &\pr{  (X =1,Y=0) | Z=0}\pr{Z=0}\\ 
-&= 1/3\times1/2\times1/2 + 1/3\times1/2\times1/2\\
-&= 1/6
+&= 1/3\times1/2\times1/2 + 1/3\times1/2\times1/2\\ 
+&= 1/6 
 \end{align}
 \begin{align}
 \therefore \pr{E} = \frac{1}{6} 
 \end{align}
-\item Let $E$ be event that balls of opposite colours are chosen.
+\item Let $E$ be event that balls of opposite colours are chosen.\\
+From the axioms of probability ,\\
 Required Probability:
 \begin{align}
-\pr{(X+Y)>1} &=\pr{((X+Y)>1)|Z =0}  \\ \nonumber
-& + \pr{((X+Y)>1)|Z=1} \\ 
-&= 8\times1/3\times1/2\times1/2\\
-&= 2/3\\
+&\pr{(X+Y)>1} =\\ \nonumber
+&1-\pr{(X+Y)=1,Z =0} -\pr{(X+Y)=1,Z=1}  \\ \label{eq:2}
+&\pr{X+Y=1,Z=1} =\\ \nonumber
+&\pr{ (X =0,Y=1) | Z=1}\pr{Z=1} +\\ \nonumber
+&\pr{  (X =1,Y=0) | Z=1}\pr{Z=1}\\ 
+&= 1/3\times1/2\times1/2 + 1/3\times1/2\times1/2\\ 
+&= 1/6  
+\end{align}
+Using \eqref{eq:1} and \eqref{eq:2}
+\begin{align}
+\pr{(X+Y)>1} &=1-2\times\frac{1}{6}\\
+&=2/3
 \end{align}
 \begin{align}
 \therefore \pr{E} &= \frac{2}{3}
