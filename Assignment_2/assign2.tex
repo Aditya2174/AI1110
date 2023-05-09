@@ -125,10 +125,10 @@ chosen at random from the same urn without replacing the first ball.
 %Answer
 \solution
 
-Probability of an event $E$, written as $\pr{E}$
-\begin{align}
-\pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to $E$}}{\text{Total Number of possible outcomes }}
-\end{align}
+% Probability of an event $E$, written as $\pr{E}$
+% \begin{align}
+% \pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to $E$}}{\text{Total Number of possible outcomes }}
+% \end{align}
 Let $Z$ be a Bernoulli random variable
  \begin{equation}
     Z=
@@ -181,23 +181,26 @@ Required Probability:
 \begin{align}  \label{eq:1}
 &\pr{X+Y=1,Z=0} =\\ \nonumber
 &\pr{ (X+Y=1) | Z=0}\pr{Z=0} \\ \nonumber
-&= \frac{1}{3}\times\frac{1}{2}\times\frac{1}{2} + \frac{1}{3}\times\frac{1}{2}\times\frac{1}{2}\\ 
+&= (\frac{1}{3}\times\frac{1}{2} + \frac{1}{3}\times\frac{1}{2})\times\frac{1}{2}\\ 
 &= 1/6 
 \end{align}
-\begin{align}
+\begin{align} 
 \therefore \pr{E} = \frac{1}{6} 
 \end{align}
 \item Let $E$ be event that balls of opposite colours are chosen.\\
 From the axioms of probability ,\\
 Required Probability:
+\begin{align}
+\pr{(X+Y)>1} = 1 - \pr{(X+Y)=1} 
+\end{align}
+Using Symmetry ,
 \begin{multline}
-\pr{(X+Y)>1} = 1 - \pr{(X+Y)=1}  \\
 \pr{X+Y=1,Z=0} =\pr{X+Y=1,Z=1} \\ \label{eq:2}
-= \frac{1}{6}  \\
+=\frac{1}{6} 
 \end{multline}
 Using \eqref{eq:1} and \eqref{eq:2}
 \begin{align}
-\pr{(X+Y)>1} &=1-2\times\frac{1}{6}\\
+\pr{(X+Y)>1} &=1-2\times(\frac{1}{6})\\
 &=\frac{2}{3}
 \end{align}
 \begin{align}
