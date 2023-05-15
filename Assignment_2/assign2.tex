@@ -114,8 +114,7 @@ at random. Next a ball is randomly chosen from the urn. Then a second ball is
 chosen at random from the same urn without replacing the first ball.
 
 \begin{enumerate}[label=(\alph*)]
-\item Write the sample space showing all possible outcomes
-
+% \item Write the sample space showing all possible outcomes
 \item What is the probability that two black balls are chosen?
 
 \item What is the probability that two balls of opposite colour are chosen?
@@ -129,9 +128,38 @@ chosen at random from the same urn without replacing the first ball.
 % \begin{align}
 % \pr{E}=\displaystyle\frac{\text{Number of outcomes favourable to $E$}}{\text{Total Number of possible outcomes }}
 % \end{align}
-Let $X$ be a random variable denoting first ball is chosen and
- $Y$ be random variable denoting second ball is chosen .
+Let $Z$ be a Bernoulli random variable
+ \begin{equation}
+    Z=
+    \begin{cases}
+      0, & \text{if Urn 1 chosen }\\
+      1, & \text{if Urn 2 chosen}
+    \end{cases}
+  \end{equation}
+  Since both events are equally likely
+  \begin{align}
+  \pr{Z=0} &= \pr{Z=1}\\
+         &=\frac{1}{2}
+  \end{align}
+  Let $X_i$ be a random variable 
+  where $i$ denotes the turn
+  \begin{equation}
+    X_i=
+    \begin{cases}
+      0, & \text{if Black ball chosen }\\
+      1, & \text{if White ball chosen}
+    \end{cases}
+  \end{equation}
+Let $X_1$ be a random variable denoting first ball is chosen and
+ $X_2$ be random variable denoting second ball is chosen .
+ % \begin{enumerate}
+ %     \item $(X+Y =1,Z=0) $ represents 2 black balls are chosen.
+ %     \item $(X+Y =1,Z=1) $ represents 2 white balls are chosen.
+ %     \item $ (X+Y) > 1 $ represents 2 balls of opposite colors are chosen.
+ % \end{enumerate}
  
+ 
+
 \begin{table}[ht!]
 		\centering
 		\input{Tables/table1.tex}
@@ -139,48 +167,49 @@ Let $X$ be a random variable denoting first ball is chosen and
 		\label{table:table1}	
 	\end{table}
 
-\begin{table}[ht!]
-		\centering
-		\input{Tables/table2.tex}
-		\caption{}
-		\label{table:table2}	
-	\end{table}
+% \begin{table}[ht!]
+% 		\centering
+% 		\input{table-2.tex}
+% 		\caption{}
+% 		\label{table:table2}	
+% 	\end{table}
 
-Since $X$ is a uniformly distributed random variable,
-For $x$: \cbrak{0,1,2,3,4,5}
-\begin{align}
-\pr{X=x} = \frac{1}{6}
-\end{align}
+ 
 \begin{enumerate}[label =(\alph*)]
-\item Sample Space S:
-\begin{align}
-\cbrak{01,10,02,20,12,21,34,43,35,53,45,54}
-\end{align} 
-\begin{align}
-    \therefore n(S) = 12
-\end{align}
+% \item Sample Space S:
+% \begin{align}
+% \lcbrak{001,010,002,020,021,012,101,}\\
+%  \rcbrak{110,102,120,121,112} 
+% \end{align} 
+% \begin{align}
+%     \therefore n(S) = 12
+% % \end{align}
 \item Let $E$ be event that 2 black balls are chosen.\\
 Required Probability:
-\begin{align}  \label{eq:1}
-&\pr{X=0,Y=1}+\pr{X=1, Y =0} \\
-&= \frac{1}{6}\times\frac{1}{2} + \frac{1}{6}\times\frac{1}{2}\\ 
+\begin{align}  
+&\pr{X_1+X_2=0,Z=0} =\\ \nonumber
+&\pr{ (X_1+X_2=0) | Z=0}\pr{Z=0} \\ \nonumber
+&= \frac{2}{3}\times\frac{1}{2}\times\frac{1}{2} \\ \label{eq:1}
 &= 1/6 
 \end{align}
-\begin{align} 
+\begin{align}
 \therefore \pr{E} = \frac{1}{6} 
 \end{align}
 \item Let $E$ be event that balls of opposite colours are chosen.\\
-From the axioms of probability , \\
+From the axioms of probability ,\\
 Required Probability:
+\begin{multline}
+\pr{(X_1+X_2)=1} = \\
+1 - \pr{(X_1+X_2)=0} -\pr{(X_1+X_2)=2}  \\
+\end{multline}
+By Symmetry 
 \begin{align}
-&1- (\pr{X+Y=1} + \pr{X+Y=7})
+\pr{X_1+X_2=0,Z=0} &=\pr{X_1+X_2=2,Z=1}  \label{eq:2} \\
+&= \frac{1}{6}  
 \end{align}
-By Symmetry,
+Using \eqref{eq:1} and \eqref{eq:2}
 \begin{align}
-&\pr{X+Y=1}=\pr{X+Y=7}\\
-&\because \pr{X=2,Y=5}=0\\
-&\therefore \pr{X+Y=7}=\frac{1}{6} \\
-&=1-2\times\frac{1}{6}\\
+\pr{(X_1+X_2)=1} &=1-2\times\frac{1}{6}\\
 &=\frac{2}{3}
 \end{align}
 \begin{align}

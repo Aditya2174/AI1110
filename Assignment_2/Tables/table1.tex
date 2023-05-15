@@ -149,9 +149,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{100pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{100pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{200pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{200pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{40pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{40pt*\gnumericScale}@{}}x\end{tabular}}
 
@@ -203,71 +203,60 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hhline{|-|-|-|-|-|-|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$X$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Description}}}
- %    &\multicolumn{1}{p{\gnumericColC}|}%
- %    {\gnumericPB{\centering}\gnumbox{$Y | Z = 0 $}}
- %    &\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\centering}\gnumbox{$X_1$}}
+	% &\multicolumn{1}{p{\gnumericColB}|}%
 	% {\gnumericPB{\centering}\gnumbox{\textbf{Description}}}
+    &\multicolumn{1}{p{\gnumericColB}|}%
+    {\gnumericPB{\centering}\gnumbox{$X_2$}}
+    &\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\gnumbox{\textbf{Description}}}
 \\
 \hhline{|--|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$0$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$B_1$ chosen}}
- %    &\multicolumn{1}{p{\gnumericColC}|}%
- %   {\gnumericPB{\centering}\gnumbox{$0$}}
- %    &\multicolumn{1}{p{\gnumericColD}|}%
-	% {\gnumericPB{\centering}\gnumbox{$B_1$ chosen }}
+	% &\multicolumn{1}{p{\gnumericColB}|}%
+	% {\gnumericPB{\centering}\gnumbox{Black chosen}}
+    &\multicolumn{1}{p{\gnumericColB}|}%
+   {\gnumericPB{\centering}\gnumbox{$0$}}
+    &\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\gnumbox{Both Black chosen }}
 	
 \\
 \hhline{|--|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$1$}}
+	% &\multicolumn{1}{p{\gnumericColB}|}%
+	% {\gnumericPB{\centering}\gnumbox{White chosen}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$B_2$ chosen}}
-	% &\multicolumn{1}{p{\gnumericColC}|}%
-	% {\gnumericPB{\centering}\gnumbox{$1$}}
- %    &\multicolumn{1}{p{\gnumericColD}|}%
-	% {\gnumericPB{\centering}\gnumbox{$B_2$ chosen }}
+	{\gnumericPB{\centering}\gnumbox{$1$}}
+    &\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\gnumbox{Both White chosen }}
  
 \\
 \hhline{|--|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$2$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$W$ chosen}}
- %    &\multicolumn{1}{p{\gnumericColC}|}%   
- %    {\gnumericPB{\centering}\gnumbox{$2$}}
- %    &\multicolumn{1}{p{\gnumericColD}|}%
-	% {\gnumericPB{\centering}\gnumbox{$W$ chosen }}
-
- \\
- \hhline{|--|--|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$3$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$W_1$ chosen}}
-
- \\
- \hhline{|--|--|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$4$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$W_2$ chosen}}
-
- \\
- \hhline{|--|--|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{$5$}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$B$ chosen}}
+	{\gnumericPB{\centering}\gnumbox{$0$}}
+	% &\multicolumn{1}{p{\gnumericColB}|}%
+	% {\gnumericPB{\centering}\gnumbox{$W$ chosen}}
+    &\multicolumn{1}{p{\gnumericColB}|}%   
+    {\gnumericPB{\centering}\gnumbox{$1$}}
+    &\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\gnumbox{Black,White chosen }}
  
 \\
+\hhline{|--|--|}
+	 \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}\gnumbox{$1$}}
+	% &\multicolumn{1}{p{\gnumericColB}|}%
+	% {\gnumericPB{\centering}\gnumbox{$W$ chosen}}
+    &\multicolumn{1}{p{\gnumericColB}|}%   
+    {\gnumericPB{\centering}\gnumbox{$0$}}
+    &\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\gnumbox{White,Black chosen }}
+ 
+ \\
 \hhline{|-|-|-|-|-|}
 \end{tabular}
 
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
 \gnumericTableEnd
-
