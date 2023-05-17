@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  18 MAY 2023 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  18 MAY 2023 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,18 +1202,16 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ))
-
-LaTeX Warning: Reference `555_t_c' on page 1 undefined on input line 312.
-
-<images/555_timer_circuit.jpg, id=7, 697.60625pt x 542.025pt>
+<images/555_timer_circuit.jpg, id=8, 697.60625pt x 542.025pt>
 File: images/555_timer_circuit.jpg Graphic file (type jpg)
 <use images/555_timer_circuit.jpg>
 Package pdftex.def Info: images/555_timer_circuit.jpg  used on input line 314.
 (pdftex.def)             Requested size: 252.0pt x 195.79877pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/7474.jpg, id=8, 968.61874pt x 542.025pt>
+<images/7474.jpg, id=9, 968.61874pt x 542.025pt>
 File: images/7474.jpg Graphic file (type jpg)
 <use images/7474.jpg>
 Package pdftex.def Info: images/7474.jpg  used on input line 324.
@@ -1221,10 +1219,7 @@ Package pdftex.def Info: images/7474.jpg  used on input line 324.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `XOR' on page 1 undefined on input line 329.
-
-<images/circuit_connections.jpg, id=9, 1204.5pt x 475.7775pt>
+<images/circuit_connections.jpg, id=11, 1204.5pt x 475.7775pt>
 File: images/circuit_connections.jpg Graphic file (type jpg)
 <use images/circuit_connections.jpg>
 Package pdftex.def Info: images/circuit_connections.jpg  used on input line 331
@@ -1233,10 +1228,7 @@ Package pdftex.def Info: images/circuit_connections.jpg  used on input line 331
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `7447' on page 1 undefined on input line 336.
-
-<images/7447.jpg, id=10, 939.51pt x 542.025pt>
+<images/7447.jpg, id=13, 939.51pt x 542.025pt>
 File: images/7447.jpg Graphic file (type jpg)
 <use images/7447.jpg>
 Package pdftex.def Info: images/7447.jpg  used on input line 338.
@@ -1244,18 +1236,12 @@ Package pdftex.def Info: images/7447.jpg  used on input line 338.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `table' on page 1 undefined on input line 343.
-
-
-LaTeX Warning: Reference `SSD' on page 1 undefined on input line 343.
-
-<images/7447_table.jpg, id=11, 1204.5pt x 221.82875pt>
+<images/7447_table.jpg, id=16, 1204.5pt x 221.82875pt>
 File: images/7447_table.jpg Graphic file (type jpg)
 <use images/7447_table.jpg>
 Package pdftex.def Info: images/7447_table.jpg  used on input line 345.
 (pdftex.def)             Requested size: 252.0pt x 46.4094pt.
-<images/seven_segment_display.jpg, id=12, 397.485pt x 542.025pt>
+<images/seven_segment_display.jpg, id=17, 397.485pt x 542.025pt>
 File: images/seven_segment_display.jpg Graphic file (type jpg)
 <use images/seven_segment_display.jpg>
 Package pdftex.def Info: images/seven_segment_display.jpg  used on input line 3
@@ -1271,27 +1257,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./images/555_timer_circuit.jpg> <./images/7474.jpg>]
-
-LaTeX Warning: Reference `output1' on page 2 undefined on input line 362.
-
-
-LaTeX Warning: Reference `output2' on page 2 undefined on input line 362.
-
-
-LaTeX Warning: Reference `output3' on page 2 undefined on input line 362.
-
-
-LaTeX Warning: Reference `output4' on page 2 undefined on input line 362.
-
-<images/img1.jpg, id=35, 4047.12pt x 3035.34pt>
+<images/img1.jpg, id=48, 4047.12pt x 3035.34pt>
 File: images/img1.jpg Graphic file (type jpg)
 <use images/img1.jpg>
 Package pdftex.def Info: images/img1.jpg  used on input line 364.
 (pdftex.def)             Requested size: 252.0pt x 188.96724pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/img2.jpg, id=36, 1802.735pt x 4036.07875pt>
+<images/img2.jpg, id=49, 1802.735pt x 4036.07875pt>
 File: images/img2.jpg Graphic file (type jpg)
 <use images/img2.jpg>
 Package pdftex.def Info: images/img2.jpg  used on input line 370.
@@ -1299,7 +1274,7 @@ Package pdftex.def Info: images/img2.jpg  used on input line 370.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/img3.jpg, id=37, 1134.2375pt x 2835.59375pt>
+<images/img3.jpg, id=50, 1134.2375pt x 2835.59375pt>
 File: images/img3.jpg Graphic file (type jpg)
 <use images/img3.jpg>
 Package pdftex.def Info: images/img3.jpg  used on input line 376.
@@ -1307,7 +1282,7 @@ Package pdftex.def Info: images/img3.jpg  used on input line 376.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/img4.jpg, id=38, 1131.22626pt x 2835.59375pt>
+<images/img4.jpg, id=51, 1131.22626pt x 2835.59375pt>
 File: images/img4.jpg Graphic file (type jpg)
 <use images/img4.jpg>
 Package pdftex.def Info: images/img4.jpg  used on input line 382.
@@ -1320,32 +1295,26 @@ jpg> <./images/seven_segment_display.jpg> <./images/img1.jpg>] [3 <./images/img
 2.jpg> <./images/img3.jpg>] [4
 
  <./images/img4.jpg>] (./hardware.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `hardware.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  29184 strings out of 478287
  575856 string characters out of 5849289
- 837889 words of memory out of 5000000
+ 838341 words of memory out of 5000000
  46734 multiletter control sequences out of 15000+600000
  537930 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,9n,96p,500b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,9n,96p,500b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on hardware.pdf (4 pages, 4524026 bytes).
+Output written on hardware.pdf (4 pages, 4523227 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  26 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
