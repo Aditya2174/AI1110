@@ -40,9 +40,9 @@ height = 500
 width = 800
 screen = pygame.display.set_mode((width,height))
 pygame.display.set_caption("Music")
-Pause = button('Pause',125,50,(355,440))
-Next = button('Next',125,50,(490,440))
-Play = button('Play',125,50,(355,440))
+Pause = button('Pause',125,50,(270,440))
+Next = button('Next',125,50,(405,440))
+Play = button('Play',125,50,(270,440))
 run = True
 state = 'Play'
 
@@ -52,9 +52,9 @@ mixer.init()
 mixer.music.set_volume(1)
 number = np.random.permutation(20)
 # number.extend(np.random.permutation(20))
-print(number)
+#print(number)
 number = number + np.ones(20 ,dtype = int).reshape(20)
-print(number)
+#print(number)
 while run:
     
     count = 0
@@ -62,6 +62,7 @@ while run:
     s = str(song)
     mixer.music.load(s + '.mp3')
     mixer.music.play()
+    print(s +'.mp3')
     Text = button('Currently Playing: '+ s + '.mp3',395,60,(220,220))
     
     screen.fill((39,48,71))
